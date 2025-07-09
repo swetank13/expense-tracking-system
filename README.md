@@ -5,8 +5,9 @@ This project is an expense management system that consists of a Streamlit fronte
 
 ## Project Structure
 
-- **frontend/**: Contains the Streamlit application code.
 - **backend/**: Contains the FastAPI backend server code.
+- **documents/**: Contains the Architecture diagram and screenshot of front end.
+- **frontend/**: Contains the Streamlit application code.
 - **tests/**: Contains the test cases for both frontend and backend.
 - **requirements.txt**: Lists the required Python packages.
 - **README.md**: Provides an overview and instructions for the project.
@@ -31,3 +32,12 @@ This project is an expense management system that consists of a Streamlit fronte
    ```commandline
     streamlit run frontend/app.py
    ```
+   
+## Services used
+- **API calls with Requests**
+- **Database Interactions**
+- **FastAPI**
+- **Streamlit**
+- **Pydantic**
+- **Context Manager**
+- **Pytest**
