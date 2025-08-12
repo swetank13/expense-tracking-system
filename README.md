@@ -33,20 +33,16 @@ This project is an expense management system that consists of a Streamlit fronte
    ```commandline
     uvicorn server.server:app --reload
 
-   Run the below command at terminal at \expense-tracking-system>uvicorn backend.server:app –reload
-   Server will start and you see below
-   <img width="975" height="200" alt="image" src="https://github.com/user-attachments/assets/bacebb33-fade-430b-8d95-3cc303b89579" />
-
+   Run the command at project level <expense-tracking-system> uvicorn backend.server:app –reload
+   
    Then you can use request and test the connection from postman (Ex: get method: http://127.0.0.1:8000/expenses/2024-08-15)
 
    Please refer postman collection in resources folder.
-   
    ```
 1. **Run the Streamlit app:**:   
    ```commandline
     streamlit run frontend/app.py
 
    At project level <expense-tracking-system> we need to run the command `streamlit run frontend/app.py`
-   <img width="975" height="225" alt="image" src="https://github.com/user-attachments/assets/64d16fa5-b21f-4d7c-886a-23378b260be3" />
-
    ```
+
