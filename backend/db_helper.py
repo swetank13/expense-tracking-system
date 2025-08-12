@@ -1,6 +1,6 @@
 import mysql.connector
 from contextlib import contextmanager
-from logging_setup import setup_logger
+from backend.logging_setup import setup_logger
 
 
 logger = setup_logger('db_helper')
@@ -11,7 +11,7 @@ def get_db_cursor(commit=False):
     connection = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="root",
+        password="abc@123",
         database="expense_manager"
     )
 
@@ -25,10 +25,10 @@ def get_db_cursor(commit=False):
 
 def fetch_expenses_for_date(expense_date):
     logger.info(f"fetch_expenses_for_date called with {expense_date}")
-    with get_db_cursor() as cursor:
+    with get_db_cursor(commit=False) as cursor:
         cursor.execute("SELECT * FROM expenses WHERE expense_date = %s", (expense_date,))
-        expenses = cursor.fetchall()
-        return expenses
+        expenses_all = cursor.fetchall()
+        return expenses_all
 
 
 def delete_expenses_for_date(expense_date):
@@ -48,7 +48,7 @@ def insert_expense(expense_date, amount, category, notes):
 
 def fetch_expense_summary(start_date, end_date):
     logger.info(f"fetch_expense_summary called with start: {start_date} end: {end_date}")
-    with get_db_cursor() as cursor:
+    with get_db_cursor(commit=False) as cursor:
         cursor.execute(
             '''SELECT category, SUM(amount) as total 
                FROM expenses WHERE expense_date
