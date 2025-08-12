@@ -23,7 +23,7 @@ This project is an expense management system that consists of a Streamlit fronte
 1. **Initial Setup for Project**:
    ```commandline
    Use Pycharm, Create python .venv at your project level. At bottom right IDE should display below
-   <img width="595" height="58" alt="image" src="https://github.com/user-attachments/assets/1df13d84-da10-44c1-8dae-ca2cb10bd1e1" />
+   Python 3.10(expense-tracking-system)
    ```
 1. **Install dependencies:**:   
    ```commandline
@@ -45,4 +45,5 @@ This project is an expense management system that consists of a Streamlit fronte
 
    At project level <expense-tracking-system> we need to run the command `streamlit run frontend/app.py`
    ```
+
 
