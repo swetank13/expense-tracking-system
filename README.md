@@ -20,6 +20,15 @@ This project is an expense management system that consists of a Streamlit fronte
    git clone https://github.com/yourusername/expense-management-system.git
    cd expense-management-system
    ```
+1. **MySQL Database Setup for the project**:
+   ```commandline
+   Download and install MySql database.
+   Create Database with below details:
+   host="localhost",
+   user="Your_Username",
+   password="Your_Password",
+   database="expense_manager"
+   ```
 1. **Initial Setup for Project**:
    ```commandline
    Use Pycharm, Create python .venv at your project level. At bottom right IDE should display below
@@ -45,5 +54,6 @@ This project is an expense management system that consists of a Streamlit fronte
 
    At project level <expense-tracking-system> we need to run the command `streamlit run frontend/app.py`
    ```
+
 
 
